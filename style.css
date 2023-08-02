@@ -1,0 +1,247 @@
+* {
+  transition: all 0.1s;
+}
+body {
+  font-family: 'Bebas Neue', cursive;
+  
+ 
+}
+
+.inactive {
+  display: none !important;
+}
+:root {
+  --main-bg: hsl(268, 75%, 9%);
+  --toggle-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+
+  --key-bg-1: hsl(281, 89%, 26%);
+  --key-shadow-1: hsl(285, 91%, 52%);
+
+  --key-bg-2: hsl(176, 100%, 44%);
+  --key-shadow-2: hsl(177, 92%, 70%);
+
+  --key-bg-3: hsl(268, 47%, 21%);
+  --key-shadow-3: hsl(290, 70%, 36%);
+
+  --text-color-1: hsl(198, 20%, 13%);
+  --text-color-2: hsl(52, 100%, 62%);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(/fondo-pared-ladrillo-luz-neon-ilustracion-3d_161844-389.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+  
+}
+
+
+.game-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 335px;
+  height: 335px;
+}
+.menu-game {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.play {
+  width: 70%;
+  height: 40px;
+  border-radius: 24px;
+  background-color: var(--key-shadow-1);
+  border: 0;
+  color: var(--text-color-2);
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 4px 7px 6px 0px rgba(0,0,0,0.75);
+
+}
+
+.play:hover {
+  background-color: var(--key-bg-1);
+}
+
+.choose-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px ;
+}
+
+.choose-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--key-bg-2);
+  letter-spacing: 3px;
+}
+
+.math, .science, .culture {
+  width: 80%;
+  height: 40px;
+  border-radius: 24px;
+  border: 0;
+  background-color: var(--key-shadow-1);
+  color: var(--text-color-2);
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 4px 7px 6px 0px rgba(0,0,0,0.75);
+}
+
+
+.ingame-menu {
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  position: relative;
+  
+  
+ 
+}
+
+.question-one, .question-two, .question-three, .question-four {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  
+}
+.question-img {
+  background-image: url(/banner2.png);
+  width: 320px;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.question-container {
+  text-align: center;
+  width: 70%;
+  height: 40%;
+  color: var(--text-color-2);
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.question-one-text, .question-two-text, .question-three-text, .question-four-text {
+  width: 95%;
+  height: 40px;
+  border-radius: 24px;
+  border: 0;
+  color: var(--text-color-2);
+  font-weight: bold;
+  background-color: var(--key-shadow-1);
+  margin-top: 40px;
+  box-shadow: 4px 7px 6px 0px rgba(0,0,0,0.75);
+}
+
+.result-selection {
+  width: 70%;
+  height: 100px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  gap: 12px;
+  background-color: var(--key-shadow-1);
+  
+  
+}
+
+.result {
+  font-size: 20px;
+  color: var(--text-color-2);
+}
+
+.continue-btn {
+  width: 50%;
+  border-radius: 48px;
+  height: 30px;
+  background-color: var(--key-shadow-3);
+  border: 0;
+  color: var(--text-color-2);
+  box-shadow: 4px 7px 6px 0px rgba(0,0,0,0.75);
+}
+
+.selection-text {
+color: var(--text-color-2);
+
+}
+
+.ending-video {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.congrats {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.restart-menu {
+  width: 70%;
+  height: 40px;
+  margin-top: 16px;
+  border-radius: 24px;
+  background-color: var(--key-shadow-3);
+  color: var(--text-color-2);
+  border: 0;
+  box-shadow: 4px 7px 6px 0px rgba(0,0,0,0.75);
+  
+}
+
+
+@media (min-width: 1024px) {
+  .ending {
+    width: 50%;
+    height: 50%;
+    justify-self: center;
+  }
+  .restart-menu {
+    width: 25%;
+  }
+}
+
+
+

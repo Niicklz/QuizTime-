@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/reset-min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ending-video inactive" id="endVideoCont">
+        <p class="congrats">FELICIDADES HAS TERMINADO EL JUEGO!!</p>
+        <video class="ending" src="/video/gatoEnding.mp4" id="ending"></video>
+        <button class="restart-menu" id="restart">Regresar al menu</button>
+      </div>
+      <div class="game-container " id="gameContainer">
+        <div id="banner" class="question-img inactive">
+          <p id="questionTextCont" class="question-container">CUANTOS PLANETAS EXISTEN?</p>
+        </div>
+        <div id="result" class="result-selection inactive">
+          <h2 id="resultText" class="result">Has ganao!</h2>
+          <button class="continue-btn" id="continueBtn">Continuar</button>
+        </div>
+        <h3 class="selection-text inactive">Selecciona tu respuesta!</h3>
+        <div id="logo" class="logo ">
+          <img
+            src="/quiz-time-neon-signs-style-text-free-vector-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <div data-btn="menuCont" class="menu-game ">
+          <button data-btn="btnPlay" id="play" class="play">PLAY!</button>
+        </div>
+
+        <div  id="chooseMenu" class="choose-menu inactive">
+          <p class="choose-text">Elige Una Categoria</p>
+          <button data-chooseMenu="option1" class="math">MATEMATICAS</button>
+          <button data-chooseMenu="option2" class="science">CIENCIA</button>
+          <button data-chooseMenu="option3" class="culture">CULTURA</button>
+        </div>
+        <div  id="ingame" class="ingame-menu inactive">
+          <div class="question-one">
+            <button  data-option="btn1" class="question-one-text">Lorem.</button>
+          </div>
+          <div class="question-two">
+            <button data-option="btn2" class="question-one-text">Lorem.</button>
+          </div>
+          <div class="question-three">
+            <button  data-option="btn3" class="question-one-text">Lorem.</button>
+          </div>
+          <div class="question-four">
+            <button data-option="btn4" class="question-one-text">Lorem.</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <audio src="/sounds/QuizSound.mp3" id="themeSound"></audio>
+    <audio src="/sounds/soundBtn.mp3" id="soundBtn"></audio>
+    <audio src="/sounds/loser.mp3" id="loser"></audio>
+    <audio src="/sounds/winSound.mp3" id="winSound"></audio>
+    <script src="/main.js"></script>
+    
+  </body>
+</html>
